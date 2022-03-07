@@ -4,7 +4,6 @@ const { server } = require('../src/server');
 const supertest = require('supertest');
 const request = supertest(server);
 const { db } = require('../src/models/index');
-const { expect } = require('@jest/globals');
 
 beforeAll(async () => {
     await db.sync();
