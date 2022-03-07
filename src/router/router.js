@@ -19,7 +19,7 @@ async function signUpFunction(req, res) {
     }
 }
 async function loginFunction(req, res) {
-    res.status(200).json(req.user);
+   await res.status(200).json(req.user);
 }
 function homeRouteFunction(req, res) {
     res.status(200).send("my Home Route")

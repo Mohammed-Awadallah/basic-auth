@@ -2,6 +2,7 @@ class Collection {
     constructor(model) {
         this.model = model;
     }
+    
 
     async create(obj) {
         try {
